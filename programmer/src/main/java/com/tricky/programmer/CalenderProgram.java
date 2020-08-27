@@ -7,7 +7,10 @@ public class CalenderProgram {
 
 	public static void main(String args[]) {
 		fetchCalenderBasedOnInput(100);
+		subtractDays(-10);
 	}
+	
+	
 
 	private static void fetchCalenderBasedOnInput(int days) {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
@@ -22,5 +25,14 @@ public class CalenderProgram {
 		String newDate = sdf.format(cal.getTime());
 		// Displaying the new Date after addition of Days to current date
 		System.out.println("Date after Addition: " + newDate);
+	}
+	
+	public static void subtractDays(int number) {
+		SimpleDateFormat sdf=new SimpleDateFormat("dd/MM/yyyy");
+		Calendar cal=Calendar.getInstance();
+		System.out.println("Cal ="+cal.getTime());
+		cal.add(Calendar.DAY_OF_MONTH,number);
+	
+		System.out.println(sdf.format(cal.getTime()));
 	}
 }
