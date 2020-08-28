@@ -5,7 +5,7 @@ public class LongestPalindrom {
 	static int resultLength = 0;
 
 	public static void main(String[] args) {
-		String str = "abcdcba";
+		String str = "madamabcdcbnaman";
 		String longest = solution(str);
 		System.out.println("Longest = " + longest);
 
