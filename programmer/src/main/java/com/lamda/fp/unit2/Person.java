@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Person {
+	private int personId;
 	private String firstname;
 	private String lastname;
 	private int age;

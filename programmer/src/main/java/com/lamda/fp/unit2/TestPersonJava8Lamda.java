@@ -9,8 +9,8 @@ import java.util.function.Predicate;
 public class TestPersonJava8Lamda {
 
 	public static void main(String[] args) {
-		List<Person> people = Arrays.asList(new Person("Samip", "Gowda", 20), new Person("Samiksha", "Gowda", 30),
-				new Person("Samkruthi", "Gana", 33), new Person("Chandana", "Gowdthi", 10));
+		List<Person> people = Arrays.asList(new Person(1,"Samip", "Gowda", 20), new Person(4,"Samiksha", "Gowda", 30),
+				new Person(2,"Samkruthi", "Gana", 33), new Person(5,"Chandana", "Gowdthi", 10));
 
 		// 1: Sort list by firstname
 		System.out.println("====================================");
