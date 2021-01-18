@@ -10,7 +10,12 @@ public class Tester {
 		Greet greet = () -> System.out.println("Print functional interface");
 		greet.greeting();
 
-		Validate val = (s3, s4) -> s1.equals(s2);
+		Validate val = (s3, s4) -> {
+			if(s1.equals(s2)) {
+				return "Same";
+			}
+			return "Not Same";
+		};
 		System.out.println(val.isSame(s1, s2));
 
 		Runnable r = () -> {
